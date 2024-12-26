@@ -1,0 +1,421 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap);
+
+* {
+   font-family: 'Montserrat';
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html {
+   scroll-behavior:smooth;
+}
+
+body {
+   margin: 0 auto;
+}
+
+/* tete de page */
+
+header.header {
+   display: flex;
+   align-items: center;
+}
+
+header.header img {
+   width: 150px;
+   border: none; /* Supprime le cadre blanc */
+}
+
+section.top-page {
+   background: url('../images/george-gerbner.webp');
+   background-size: cover;
+   background-position: center;
+   height: 80vh;
+   padding: 25px;
+   
+}
+
+/* page de bienvenue (landing page) */
+
+.landing-page {
+   position: relative;
+   padding: 20px 50px; 
+   scroll-behavior: smooth;
+}
+
+.big-title {
+   color: #FFDB58;
+   font-size: 70px;
+   font-family: 'Abril FatFace', cursive;
+   font-weight: 100;
+   width: 60%;
+   margin-bottom: 10px; /* Réduction de l'espace après le texte */
+}
+
+.scroll-down {
+   color: white;
+   text-decoration: none;
+   position: absolute;
+   bottom: 10px; /* Évite que le lien soit collé au bord */
+  
+}
+
+/* menu de navigation */
+
+.photo:hover{
+        transform: scale(1.2); /* Zoom encore plus prononcé */
+
+}
+nav.nav {
+   display: flex;
+   justify-content: space-between;
+   list-style: none;
+   width: 500px;
+   margin-left: 30px;
+   color: whitesmoke;
+}
+
+nav.nav li a {
+   color: whitesmoke;
+   text-decoration: none;
+}
+
+.nav {
+    display: flex; /* Aligne les enfants (li) horizontalement */
+    justify-content: space-between; /* Distribue les éléments uniformément */
+    align-items: center; /* Centre verticalement */
+    list-style: none; /* Supprime les puces */
+    padding: 0;
+    margin: 0;
+}
+
+.nav li {
+    display: inline; /* Affiche chaque élément en ligne */
+    margin-right: 20px; /* Espacement entre les liens */
+}
+
+.nav a {
+    text-decoration: none; /* Supprime le soulignement */
+    color: #000; /* Couleur des liens */
+    font-weight: bold; /* Texte en gras */
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color:#003366 /* Effet au survol */
+}
+
+/* services */
+
+.services {
+   display: flex;
+   justify-content: space-evenly;
+   margin: 50px 20px; /* Réduction des marges */
+}
+
+.points {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+}
+
+.points-details {
+   font-weight: 600;
+   text-align: center;
+}
+
+.three-icon {
+   font-size: 50px;
+   color:#003366
+}
+
+/* best sells */
+
+.section-title {
+   font-size: 50px;
+   font-family: 'Abril FatFace';
+   font-weight: 100;
+   position: relative;
+   margin-bottom: 20px; /* Réduction de l'espace après le titre */
+}
+
+.section-title::before {
+   content: "";
+   position: absolute;
+   background-color: #FFDB58;
+   width: 50px;
+   height: 7px;
+   bottom: -5px; /* Réduction de l'espace sous le titre */
+}
+
+.bests-items {
+   margin: 50px 20px; /* Réduction des marges */
+}
+
+.best-plants {
+   min-height: auto; /* Suppression de la hauteur fixe */
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px; /* Ajout d'un espacement cohérent */
+}
+
+.plant-box {
+   position: relative;
+   background-size: cover;
+   background-position: center;
+}
+
+.no-grid {
+   min-width: 350px;
+   height: 500px;
+   flex: 1;
+}
+
+.plant1 {
+   background-image: url(../images/Biographie/\ George\ Gerbner\ young.jpg);
+   transform: scale(1.05);
+   transition: transform 0.3s ease;;
+
+
+}
+
+.plant2 {
+   background-image: url(../images/Biographie/\ George\ Gerbner\ 3.jpg);
+   transform: scale(1.05);
+   transition: transform 0.3s ease;;
+
+
+}
+
+.plant3 {
+   background-image: url(../images/photo-GG.jpeg);
+   transform: scale(1.05);
+   transition: transform 0.3s ease;;
+
+
+}
+
+.plant4 {
+   background-image: url(../images/George%20Gerbner%20Work.jpg);
+   transform: scale(1.05);
+   transition: transform 0.3s ease;;
+
+
+}
+
+.plant-details {
+   position: absolute;
+   width: 100%;
+   bottom: 0;
+   background-color: #FFFFFFDF;
+   padding: 5px 20px;
+}
+
+.plant-name {
+   font-size: 22px;
+   font-weight: 600;
+   line-height: 1.5; /* Ajustement de l'espacement */
+}
+
+.plant-price {
+   color: rgb(1, 1, 102);
+   line-height: 1.5;
+   font-size: 14px;
+   font-weight: 800;
+}
+
+/* nos plantes */
+
+.all-plants {
+   margin: 50px 20px; /* Réduction des marges */
+}
+
+.plant-grid {
+   display: grid;
+   grid-gap: 20px; /* Ajout d'espacement entre les éléments */
+   grid-template-columns: repeat(4, 1fr);
+   grid-template-rows: repeat(4, 250px);
+   transition: transform 0.3s ease;;
+
+}
+
+.plant-grid1 {
+   background-image: url(../images/te%CC%81le%CC%81chargement.jpeg);
+   grid-column: 1/3;
+   grid-row: 1/3;
+   transition: transform 0.3s ease;;
+
+}
+
+.plant-grid2 {
+   background-image: url(../images/'Annenberg%20School.png);
+   grid-column: 3/5;
+   transition: transform 0.3s ease;;
+
+}
+
+.plant-grid3{
+   background-image: url(../images/Université\ de\ Californie.webp);
+   grid-column: 3/5;
+   transition: transform 0.3s ease;;
+
+}
+
+.biography-section, .formation-section, .impact-section {
+   padding: 20px;
+   margin: 20px auto;
+   text-align: center;
+   line-height: 4; /* Ajuste la hauteur interne au contenu */
+   background-color: #003366;
+   color: whitesmoke;
+   border-radius: 10px;
+   box-shadow: 0 2px 5px rgba(68, 19, 19, 0.1);
+   line-height: 1.8;
+   word-wrap: break-word;
+   max-width: 90%; /* Limite la largeur excessive */
+   margin-bottom: 10px; /* Réduction de l'espace après chaque section */
+
+}
+.best-plants2 {
+    min-height: auto; /* Suppression de la hauteur fixe */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Ajout d'un espacement cohérent */
+ }
+ 
+ .plant-box2 {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+ }
+.formation-section{
+    margin-top: -500px; /* Essaie différentes valeurs pour rapprocher */
+
+}
+
+
+/* Galerie des photos */
+.gallery {
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center;     /* Centre verticalement si nécessaire */
+    flex-wrap: wrap;         /* Permet aux images de passer à la ligne si elles ne tiennent pas en une seule ligne */
+    gap: 20px;               /* Espace entre les images */
+    width: 100%;
+    margin: 50px 0;
+}
+
+.photo {
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.3s ease;;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+/* Zoom sur les images lorsque l'utilisateur passe dessus */
+.photo:hover {
+    transform: scale(1.05);
+}
+
+
+/* Effet de zoom au survol */
+.photo:hover {
+    transform: scale(1.1);
+}
+
+/* pied de page */
+
+footer {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 20px;
+   font-weight: 600;
+}
+
+footer a.cgv {
+   text-decoration: none;
+   color: black;
+}
+.section-sources{
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    li {
+        margin-bottom: 10px;
+    }
+    
+    a {
+        text-decoration: none;
+        color: blue;
+    }
+    
+    a:hover {
+        text-decor
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fbf7f7;
+    color: #003366;
+    padding: 20px 40px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+footer .contact, footer .social {
+    margin-bottom: 20px;
+}
+
+footer .contact h4, footer .social h4 {
+    color: #FFDB58;
+    margin-bottom: 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+footer .contact p, footer .social a {
+    margin: 5px 0;
+    color: #003366;
+    font-size: 14px;
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+footer .contact a:hover, footer .social a:hover {
+    color: #FFDB58;
+}
+
+footer .social-icons a {
+    margin: 0 10px;
+    font-size: 24px;
+    color: #003366;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    color: #FFDB58;
+    transform: scale(1.2);
+}
+
+footer .cgv {
+    color: #FFDB58;
+    font-size: 14px;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+footer .copyright {
+    font-size: 12px;
+    color: #003366;
+}
